@@ -7,11 +7,23 @@
    box-sizing: border-box;
 }
 
+header{
+   text-align: center;
+   background: #ff4500;
+   padding: 10px;
+   font-size: 1.3rem;
+   text-shadow: 5px 8px 4px;
+   margin-bottom: 10px;
+}
+
+h1{
+   text-align: center;
+}
+
 .grid-container{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: .7rem;
-   margin: 5px;
+   gap: 0.675rem;
 }
 
 section{
@@ -36,7 +48,7 @@ section:last-child{
 }
 
 .dark{
-   background: #0f0f10;
+   background: #1b1b24;
 }
 
 .orange{
@@ -45,4 +57,15 @@ section:last-child{
 
 .orangered{
    background: #ff4500;
+}
+
+
+@media screen and (max-width: 600px){
+   .grid-container{
+      display: block;
+   }
+
+   section{
+      margin: 5px auto;
+   }
 }
